@@ -1,0 +1,3 @@
+pygments: true
+
+destination: /usr/share/nginx/http
