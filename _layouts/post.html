@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
+<article>
 
-<div id="post">
-{{ content }}
+<div class="post">
+  <h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  <h3 class="date">{{ page.date | date: "%B %d, %Y" }}</h3>
+
+  <div class="body">
+    {{ content }}
+  </div>
 </div>
 
+<!--
 <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
@@ -14,3 +21,6 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+-->
+
+</article>

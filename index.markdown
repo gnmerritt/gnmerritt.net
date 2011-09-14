@@ -4,7 +4,7 @@ title: gnmerritt.net - Nathan's home on the web
 ---
 
 {% for post in site.posts limit:6 %}
-  {% include show_post.html %}
+  {% post %}
 {% endfor %}
 
 ### Older Posts ###
