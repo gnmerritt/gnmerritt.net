@@ -4,8 +4,8 @@ title: First Jekyll Post
 category: meta
 ---
 
-SOOooo, I decided to set up a real blog. As great as a bunch of <p>'s
-and <hr>'s all smashed together on a page were, I figured it was time
+SOOooo, I decided to set up a real blog. As great as a bunch of p's
+and hr's all smashed together on a page were, I figured it was time
 to move to something easier on all of
 us. [Jekyll](https://github.com/mojombo/jekyll/) is a nifty ruby-based
 website generator. It runs through a site and makes the pages for you,
