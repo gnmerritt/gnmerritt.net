@@ -1,36 +1,12 @@
-body    {
-        font-family: Courier, sans-serif;         
-        }
+body { font-family: Courier, sans-serif; }
 
-h2      {
-        text-align: center;    
-        }
+h2 { text-align: center; }
 
-#left-nav {
-	width: 240px; float: left;
-        }       
+#left-nav { width: 240px; float: left; }
 
+#content { margin-left: 250px; margin-right: 50px; border-top: 30px; border-bottom: 30px; }
+#content h4 { text-align: right; }
+#content p { }
 
-#content {
-	margin-left: 250px;
-	margin-right: 50px;
-
-	border-top: 30px;
-	border-bottom: 30px;
-
-	}
-
-#content h4 {
-        text-align: right;        
-        }
-
-#content p {
-        
-        }
-
-#footer {
-        margin-left: 50px;
-        margin-right: 50px; 
-	clear: both;
-	}
+#footer { margin:0 50px; clear: both; }
 
