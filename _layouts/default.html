@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
 <title>{{ page.title }}</title>
-<link rel="stylesheet" type="text/css" media="screen, print" href="css/blog.css">
+<link rel="stylesheet" type="text/css" media="screen, print" href="/css/blog.css">
 </head>
 <body>
 
@@ -10,9 +10,7 @@
 
 </header>
 
-<nav>
-
-<div id="left-nav">
+<nav class="left">
 
  <h3>Nathan's Stuff:</h3>
 
@@ -35,7 +33,7 @@
    </li>
  </ul>
 
-</div>
+</nav>
 <!--
 <script>var GithubPush = {num_old:5,nodes:['gnmerritt/multiTrace-features']}</script>
 <div id='commits'></div>
@@ -53,5 +51,14 @@
 
 <script src='http://gitlive.com/githublive.min.js'></script>
 <script type="text/javascript" src="js/blog.js" />
+<script>
+  document.createElement('header');
+  document.createElement('nav');
+  document.createElement('section');
+  document.createElement('article');
+  document.createElement('aside');
+  document.createElement('footer');
+</script>
+
 </body>
 </html>
