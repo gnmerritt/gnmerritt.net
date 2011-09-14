@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: static
 title: A little about Nathan Merritt
 ---
-
-<div id="content">
 
 Me elsewhere on the web:
 
@@ -21,9 +19,9 @@ Frisbee](http://stonedclown.com) and love to sail. I'm currently
 working on the mobile development team at
 [TripAdvisor](http://tripadvisor.com) in Newton, Massachusetts.
 
-I'm primarily interested in applying insights from both number theory
-and modern neurscience to machine learning. I was in charge of the
-low-level motion code for the [Northern
+My primary research interest is applying insights from both number
+theory and modern neurscience to machine learning. I was in charge of
+the low-level motion code for the [Northern
 Bites](http://robocup.bowdoin.edu/blog/) Robocup Team (Standard
 Platform League), where I [used particle swarm
 optimization](http://www.bowdoin.edu/student-fellowships/pdf/summer-2010/n-merritt.pdf)
@@ -38,4 +36,3 @@ satisfied with that information alone...
 
 And here's my (out of date!) [resume](/gnmerritt-resume.pdf) in case you're interested.
 
-</div> <!-- end content -->
