@@ -1,10 +1,15 @@
 ---
-layout: default;
+layout: default
 title: gnmerritt.net - Nathan's home on the web
 ---
 
 {% for post in site.posts limit:6 %}
-  {% post %}
+   <div class="post">
+     <h2> <a href="{{ post.id }}/">{{ post.title }}</a></h2>
+     <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
+     <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+     <p> <a href="{{ post.id }}/">Read Full Post...</a></p>
+  </div>
 {% endfor %}
 
 ### Older Posts ###
