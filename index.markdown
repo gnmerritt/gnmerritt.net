@@ -11,7 +11,8 @@ title: gnmerritt.net - Nathan's home on the web
      <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
      <p class="preview">{{ post.content | strip_html | truncatewords: 75 }}</p>
      {% if post.content.size > 75 %}
-       <p class="more"> <a href="{{ post.id }}.html">Read Full Post...</a></p>
+       <p class="hide" onclick="gnm.toggleOpen(this)">Toggle Post</p>
+       <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
      {% endif %}
   </article>
 {% endfor %}
