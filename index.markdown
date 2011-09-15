@@ -7,7 +7,7 @@ title: gnmerritt.net - Nathan's home on the web
 
 {% for post in site.posts limit:6 %}
   <article class="post">
-     <h3> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
+     <h3 onclick="gnm.toggleOpen(this)"> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
      <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
      <p class="preview">{{ post.content | strip_html | truncatewords: 75 }}</p>
      {% if post.content.size > 75 %}
