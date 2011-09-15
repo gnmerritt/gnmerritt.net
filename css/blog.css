@@ -15,8 +15,9 @@ nav.left { width:20%; float:left; }
 .post.closed .preview { display:none; }
 .post .body { clear:both; }
 .post .related { }
+.post .more, .post .hide { margin:0.5em; padding:0.25em; cursor:pointer; }
 .post .more { float:right; }
-.post .hide { border:1px dashed black; float:left; cursor:pointer; }
+.post .hide { border:1px dashed black; float:left; }
 
 #footer { margin:0 50px; clear:both; }
 
