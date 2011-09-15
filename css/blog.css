@@ -8,11 +8,13 @@ nav.left { width:20%; float:left; }
 #content h4 { text-align: right; }
 #content p { }
 
-.post { border:1px inset black; ]
-.post h3 { float: left; } /* title */
-.post .date { float: right; } /* date */
-.post .preview { clear:both; }
-.post .body { }
+.post { border:1px inset black; margin:1em; padding:0.5em; ]
+h3.post { float:left; } /* title */
+.post.date { float:right; } /* date */
+.post.preview { clear:both; }
+.post.body { clear:both; }
+.post.related { }
+.post.more { }
 
 #footer { margin:0 50px; clear:both; }
 
