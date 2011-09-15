@@ -12,11 +12,11 @@ nav.left { width:20%; float:left; }
 .post h3 { float:left; } /* title */
 .post .date { float:right; } /* date */
 .post .preview { clear:both; }
-.post .preview.closed { display:none; }
+.post.closed .preview { display:none; }
 .post .body { clear:both; }
 .post .related { }
 .post .more { float:right; }
-.post .hide { float:left; cursor:pointer; }
+.post .hide { border:1px dashed black; float:left; cursor:pointer; }
 
 #footer { margin:0 50px; clear:both; }
 
