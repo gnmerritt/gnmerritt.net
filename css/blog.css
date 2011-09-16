@@ -9,7 +9,7 @@ nav.left { width:20%; float:left; }
 
 div.clear { clear:both; }
 
-.post { border:1px inset black; margin:1em; padding:0.5em; }
+.post { border:1px inset black; overflow:auto; margin:1em; padding:0.5em; }
 .post.full { border-style:none; }
 .post h3 { float:left; } /* title */
 .post .date { float:right; } /* date */

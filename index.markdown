@@ -9,10 +9,8 @@ title: gnmerritt.net - Nathan's home on the web
   {% capture postUid %}{{ post.date | date: "%d%b%Y" }}{% endcapture %}
 
   <article class="post" id="{{ postUid }}">
-       <div class="clear">
-         <h3> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
-         <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
-       </div>
+       <h3> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
+       <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
        <br />
 
        <p class="preview">{{ post.content | strip_html | truncatewords: 75 }}</p>
@@ -23,7 +21,6 @@ title: gnmerritt.net - Nathan's home on the web
        <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
      {% endif %}
        </div>
-       <br />
   </article>
 {% endfor %}
 
