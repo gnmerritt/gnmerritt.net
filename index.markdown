@@ -7,7 +7,7 @@ title: gnmerritt.net - Nathan's home on the web
 
 {% for post in site.posts limit:6 %}
   {% capture postUid %}
-    {{ post.date | %m%h%d%B%Y }} %}
+    {{ post.date | date: "%d%b%Y" }}
   {% endcapture %}
 
   <article class="post" id="{{ postUid }}">
