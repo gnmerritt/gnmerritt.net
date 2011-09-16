@@ -5,17 +5,17 @@ var $ = function(element)
     return document.getElementById(element);
 }
 
-Element.prototype.hasClass:function(cls)
+Element.prototype.hasClass = function(cls)
 {
     return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
 }
 
-Element.prototype.addClass:function(cls)
+Element.prototype.addClass = function(cls)
 {
     if (!this.hasClass(ele,cls)) ele.className += " "+cls;
 }
 
-Element.prototype.removeClass:function(cls)
+Element.prototype.removeClass = function(cls)
 {
     if (hasClass(ele,cls)) {
 	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
