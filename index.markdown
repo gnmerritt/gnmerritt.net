@@ -6,17 +6,26 @@ title: gnmerritt.net - Nathan's home on the web
 <section>
 
 {% for post in site.posts limit:6 %}
-  <article class="post">
-       <h3> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
-       <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
+  {% capture postUid %}
+    {{ post.date | %m%h%d%B%Y }} %}
+  {% endcapture %}
 
-     <p class="preview">{{ post.content | strip_html | truncatewords: 75 }}</p>
+  <article class="post" id="{{ postUid }}">
+       <div class="clear">
+         <h3> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
+         <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
+       </div>
+       <br />
 
+       <p class="preview">{{ post.content | strip_html | truncatewords: 75 }}</p>
+
+       <div class="clear">
      {% if post.content.size > 75 %}
-       <p class="hide" onclick="gnm.toggleOpen(this)">Toggle Post</p>
+       <p class="hide" onclick="gnm.toggleOpen({{ postUid }})">Toggle Post</p>
        <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
-
      {% endif %}
+       </div>
+       <br />
   </article>
 {% endfor %}
 

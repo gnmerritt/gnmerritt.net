@@ -1,21 +1,21 @@
 // helper methods
 
-function $(element)
+var $ = function(element)
 {
     return document.getElementById(element);
 }
 
-function hasClass(ele,cls)
+Element.prototype.hasClass:function(cls)
 {
     return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
 }
 
-function addClass(ele,cls)
+Element.prototype.addClass:function(cls)
 {
     if (!this.hasClass(ele,cls)) ele.className += " "+cls;
 }
 
-function removeClass(ele,cls)
+Element.prototype.removeClass:function(cls)
 {
     if (hasClass(ele,cls)) {
 	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
@@ -26,17 +26,18 @@ function removeClass(ele,cls)
 var gnm =
 {
     // toggles the 'closed' class on an item, used to show/hide on demand
-    toggleOpen:function(source)
+    toggleOpen:function(elemId)
     {
-	if (source != null && source.parentNode != null)
+	var source = $(elemId);
+	if (source != null)
 	{
-	    if (hasClass(source.parentNode, 'closed'))
+	    if (source.hasClass('closed'))
 	    {
-		removeClass(source.parentNode, 'closed');
+		source.removeClass('closed');
 	    }
 	    else
 	    {
-		addClass(source.parentNode, 'closed');
+		source.addClass('closed');
 	    }
 	}
     },
