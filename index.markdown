@@ -6,9 +6,7 @@ title: gnmerritt.net - Nathan's home on the web
 <section>
 
 {% for post in site.posts limit:6 %}
-  {% capture postUid %}
-    {{ post.date | date: "%d%b%Y" }}
-  {% endcapture %}
+  {% capture postUid %}{{ post.date | date: "%d%b%Y" }}{% endcapture %}
 
   <article class="post" id="{{ postUid }}">
        <div class="clear">
