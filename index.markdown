@@ -17,7 +17,7 @@ title: gnmerritt.net - Nathan's home on the web
 
        <div class="clear">
      {% if post.content.size > 75 %}
-       <p class="hide" onclick="gnm.toggleOpen('{{ postUid }}')">Toggle Post</p>
+       <p class="hide" onclick="gnm.togglePost(this, '{{ postUid }}')">Hide Post</p>
        <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
      {% endif %}
        </div>

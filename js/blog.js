@@ -26,18 +26,20 @@ Element.prototype.removeClass = function(cls)
 var gnm =
 {
     // toggles the 'closed' class on an item, used to show/hide on demand
-    toggleOpen:function(elemId)
+    togglePost:function(source, elemId)
     {
-	var source = $(elemId);
-	if (source != null)
+	var article = $(elemId);
+	if (article != null)
 	{
-	    if (source.hasClass('closed'))
+	    if (article.hasClass('closed'))
 	    {
-		source.removeClass('closed');
+		article.removeClass('closed');
+		source.innertHtml = 'Hide Post';
 	    }
 	    else
 	    {
-		source.addClass('closed');
+		article.addClass('closed');
+		source.innertHtml = 'Show Post';
 	    }
 	}
     },
