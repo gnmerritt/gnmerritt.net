@@ -3,8 +3,6 @@ layout: default
 title: gnmerritt.net - Nathan's home on the web
 ---
 
-<section>
-
 {% for post in site.posts limit:6 %}
   {% capture postUid %}{{ post.date | date: "%d%b%Y" }}{% endcapture %}
 
@@ -13,22 +11,18 @@ title: gnmerritt.net - Nathan's home on the web
        <p class="date">{{ post.date | date: "%A, %d %B  %Y"}}</p>
        <br />
 
-       <p class="preview">{{ post.content | strip_html | truncatewords: 75 }}</p>
+       <div class="preview">{{ post.content | strip_html | truncatewords: 50 }}</div>
 
        <div class="clear">
-     {% if post.content.size > 75 %}
-       <p class="hide" onclick="gnm.togglePost(this, '{{ postUid }}')">Hide Post</p>
-       <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
-     {% endif %}
+         <p class="hide" onclick="gnm.togglePost(this, '{{ postUid }}')">Hide Post</p>
+         <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
        </div>
   </article>
 {% endfor %}
 
-</section>
-
 ### Older Posts ###
 
-{% for post in site.posts offset:6 %}
+{% for post in site.posts offset:6 limit:10 %}
   <li>
     <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
     <a href="{{ post.url }}">{{ post.title }}</a>
