@@ -4,7 +4,7 @@ h2 { text-align: center; }
 
 nav.left { width:20%; float:left; }
 
-#content { width:50%; float:left; margin-left:2.5%; border-top:30px; border-bottom:30px; }
+#content { width:60%; float:left; margin-left:2.5%; border-top:30px; border-bottom:30px; }
 #content h4 { text-align: right; }
 
 nav.right { }
