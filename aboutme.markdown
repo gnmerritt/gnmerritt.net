@@ -11,7 +11,7 @@ Me elsewhere on the web:
  *  And some [movies](http://youtube.com/profile?user=satH4n) I'm [partially](http://vimeo.com/4362627) (or completely) [responsible](http://vimeo.com/22967514) for
 
 
-I'm 22 years old and a recent graduate of Bowdoin College in
+I'm 23 years old and a recent graduate of Bowdoin College in
 Brunswick, Maine. I like brains, computers and math. I play [Ultimate
 Frisbee](http://stonedclown.com) and love to sail. I'm currently
 working on the mobile development team at
@@ -33,4 +33,3 @@ My PGP fingerprint is: <i>CDED 2183 76BB 8D0B EB3A 0B15 6AD5 C192 F259
 satisfied with that information alone...
 
 And here's my (out of date!) [resume](/gnmerritt-resume.pdf) in case you're interested.
-
