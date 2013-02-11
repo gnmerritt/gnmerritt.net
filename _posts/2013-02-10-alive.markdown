@@ -1,0 +1,10 @@
+---
+layout: post
+title: Alive Again!
+---
+
+Back and kicking (my faithful PogoPlug died on me) on a RaspberryPi. Sweet. 
+
+Since I last checked in, I've started working on a [a poker bot](https://github.com/gnmerritt/pokeher/) and I've done a whole lot of mobile development over at TripAdvisor.
+
+More updates to come, now that the site works again...
