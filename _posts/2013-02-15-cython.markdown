@@ -1,0 +1,105 @@
+---
+layout: post
+title: Optimizing Python
+---
+
+Pretty soon after I had my [poker
+bot](https://github.com/gnmerritt/pokeher/) mostly up and running I
+realized that nearly the entire runtime was dominated by a single
+function: finding the hand value (e.g. trip 8's with a KJ kicker) of a
+five card hand. The code was being called again and again by my monte
+carlo simulator for millions of hands, and my naive Python was just
+too slow.
+
+My first try was to tweak and fiddle with the algorithm, which helped
+cut the runtime down to approximately 12 seconds for my benchmark
+set. Next, I used [python
+slots](http://docs.python.org/release/2.5.2/ref/slots.html) to prevent
+Python from creating dictionaries for my simple objects. Since my
+[Card object](bit.ly/VZMAQg) essentially just held an int for value
+and an int for suit I was able to greatly cut down on memory
+consumption by adding:
+
+{% highlight python %}
+class Card(object):
+    __slots__ = ('value', 'suit')
+{% endhighlight %}
+
+This worked great, and cut my runtime down to just over 5 seconds per
+benchmark iteration. I still wanted things to go faster, so I decided
+to try moving away from pure Python. After some poking around,
+[Cython](http://cython.org) looked the most appealing. Using it I
+could keep Python almost everywhere except my few core classes, and
+those would only need minor type annotation updates. It was actually
+as easy to set up as the
+[tutorial](http://docs.cython.org/src/quickstart/overview.html)
+claimed! My Card class now became:
+
+cards.pxd:
+{% highlight python %}
+cdef class Card:
+    cdef readonly int value, suit
+{% endhighlight %}
+
+cards.pyx:
+{% highlight python %}
+cdef class Card:
+   def __cinit__(self, int val, int s):
+        self.value = val
+        self.suit = s
+{% endhighlight %}
+
+By splitting the class into two files, other Cython classes could use
+the C version of Card directly without Python overhead. One snafu I
+hit was that I had to replace Python's @functools.total_ordering
+annotation with Cython's
+[__richcmp__](http://docs.cython.org/src/userguide/special_methods.html#rich-comparisons)
+method. Cython saves you time by wrapping the comparators
+automatically once you define one method that takes an operator as an
+argument. I didn't see a canonical example of this during my googling,
+so I'll post what I ended up with:
+
+{% highlight python %}
+def __richcmp__(Card self, Card other not None, int op):
+    """Cython equivalent of functools.totalordering
+    Implements compare for Cards. Check value, then suit"""
+    cdef int compare
+    if self.value > other.value:
+        compare = 1
+    elif self.value < other.value:
+        compare = -1
+    else:
+        if self.suit > other.suit:
+            compare = 1
+        elif self.suit < other.suit:
+            compare = -1
+        else:
+            compare = 0
+    return util.richcmp_helper(compare, op)
+{% endhighlight %}
+
+And a reusable helper function to return the comparison result:
+
+{% highlight python %}
+cdef inline bint richcmp_helper(int compare, int op):
+    """Returns True/False for each compare operation given an op code.
+    Compare should act similarly to Java's comparable interface"""
+    if op == 2: # ==
+        return compare == 0
+    elif op == 3: # !=
+        return compare != 0
+    if op == 0: # <
+        return compare < 0
+    elif op == 1: # <=
+        return compare <= 0
+    elif op == 4: # >
+        return compare > 0
+    elif op == 5: # >=
+        return compare >= 0
+{% endhighlight %}
+
+After compiling the Cython in place to .so files my benchmark ran in
+2.5 seconds, or just 20% of the original implementation's
+time. There's still definitely things I can do to make it faster
+(malloc arrays instead of using Python lists) but I'm satisfied for
+now.
