@@ -16,9 +16,10 @@ cut the runtime down to approximately 12 seconds for my benchmark
 set. Next, I used [python
 slots](http://docs.python.org/release/2.5.2/ref/slots.html) to prevent
 Python from creating dictionaries for my simple objects. Since my
-[Card object](bit.ly/VZMAQg) essentially just held an int for value
-and an int for suit I was able to greatly cut down on memory
-consumption by adding:
+[Card
+object](https://github.com/gnmerritt/pokeher/blob/b5d31b32a31c2bd2d95700b867a09547bdc32993/pokeher/cards.py)
+essentially just held an int for value and an int for suit I was able
+to greatly cut down on memory consumption by adding:
 
 {% highlight python %}
 class Card(object):
