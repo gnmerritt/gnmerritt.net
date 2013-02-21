@@ -7,26 +7,33 @@
 </head>
 <body>
 
-<nav class="left">
+<div class="grid">
+
+<nav class="col sidebar">
  <h3>Nathan's Stuff:</h3>
 
-  <ul>
+  <ul class="toplist">
    <li><a href="index.html">News</a></li>
 <!--  <li><a href="/projects/">Written works</a></li> -->
 
    <li><a href="aboutme.html">About me</a></li>
+  </ul>
 
-   <li>Current Projects<br>
+  <h3>Projects:</h3>
+  <ul class="toplist">
+   <li class="section">Current</li>
+   <li class="projects">
      <ul>
        <li><a href="http://github.com/gnmerritt/pokeher">TheAiGames Poker Competition</a></li>
+       <li><a href="http://twofourteen.com">Two Fourteen Software</a></li>
        <li><a href="http://freetimeapp.com">Free Time</a></li>
      </ul>
    </li>
 
-   <li>Past Projects<br>
+   <li class="section">Past</li>
+   <li class="projects">
      <ul>
        <li><a href="/cs280/">multiTRACE vision</a></li>
-       <li><a href="http://twofourteen.com">App Development</a></li>
        <li><a href="http://robocup.bowdoin.edu/blog/">Northern Bites Robocup</a></li>
      </ul>
    </li>
@@ -38,13 +45,13 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </nav>
 
-<div id="content">
+<div id="content" class="col main">
 
 {{ content }}
 
 </div>
 
-<footer> </footer>
+</div> <!-- .grid -->
 
 <script type="text/javascript" src="/js/blog.js" />
 <script>

@@ -18,7 +18,7 @@ title: gnmerritt.net - Nathan's home on the web
        <p class="date">{{ post.date | date: "%d %B  %Y"}}</p>
        <br />
 
-       <div class="preview">{{ post.content | strip_html | truncatewords: 50 }}</div>
+       <div class="preview clear">{{ post.content | strip_html | truncatewords: 50 }}</div>
 
        <div class="clear">
          <p class="hide" onclick="gnm.togglePost(this, '{{ postUid }}')">
