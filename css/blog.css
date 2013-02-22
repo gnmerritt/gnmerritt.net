@@ -5,10 +5,10 @@ h2 { text-align: center; }
 nav.left { margin-left:2%; width:20%; float:left; }
 
 .projects ul { padding-left:15px; }
-.toplist { list-style:none; padding-left:5px; width:100%; }
+.topList { list-style:none; padding-left:5px; width:100%; }
 .section { margin:5px 0; text-decoration:underline; }
 
-.grid:after { content: ""; display: table; clear: both; }
+.grid:after { content:""; display:table; clear:both; }
 .grid .col { float:left; margin-left:2%; }
 .grid .main { width: 65%; }
 .grid .sidebar { width:30%; }
@@ -26,3 +26,18 @@ nav.left { margin-left:2%; width:20%; float:left; }
 .post .more, .post .hide { margin:0.5em; padding:0.25em; cursor:pointer; }
 .post .more { float:right; }
 .post .hide { border:1px dashed black; float:left; }
+
+.showPhone { display:none; }
+
+/* smartphone specific layout */
+@media screen and (max-width: 500px)
+{
+  .hidePhone, .twitter-timeline { display:none; }
+  .showPhone { display:block; }
+
+  .grid .col { float:none; width:100%; }
+  .grid .main { width:100%; }
+
+  .post h3, .post .date { float:none; }
+  .topList li { margin:10px 0; }
+}

@@ -3,6 +3,8 @@ layout: default
 title: gnmerritt.net - Nathan's home on the web
 ---
 
+<h3 class="showPhone">Posts:</h3>
+
 {% for post in site.posts limit:12 %}
   {% capture postUid %}{{ post.date | date: "%d%b%Y" }}{% endcapture %}
   {% if forloop.index > 3 %}
@@ -21,12 +23,8 @@ title: gnmerritt.net - Nathan's home on the web
        <div class="preview clear">{{ post.content | strip_html | truncatewords: 50 }}</div>
 
        <div class="clear">
-         <p class="hide" onclick="gnm.togglePost(this, '{{ postUid }}')">
-	   {% if hidden %}
-	     Show Post
-	   {% else %}
-	     Hide Post
-	   {% endif %}
+         <p class="hide hidePhone" onclick="gnm.togglePost(this, '{{ postUid }}')">
+	   {% if hidden %}Show Post{% else %}Hide Post{% endif %}
 	 </p>
          <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
        </div>
