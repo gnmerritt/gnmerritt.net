@@ -4,7 +4,7 @@ title: Optimizing Python
 ---
 
 Pretty soon after I had my [poker
-bot](https://github.com/gnmerritt/pokeher/) mostly up and running I
+bot](https://github.com/gnmerritt/poker/) mostly up and running I
 realized that nearly the entire runtime was dominated by a single
 function: finding the hand value (e.g. trip 8's with a KJ kicker) of a
 five card hand. The code was being called again and again by my monte
@@ -17,7 +17,7 @@ set. Next, I used [python
 slots](http://docs.python.org/release/2.5.2/ref/slots.html) to prevent
 Python from creating dictionaries for my simple objects. Since my
 [Card
-object](https://github.com/gnmerritt/pokeher/blob/b5d31b32a31c2bd2d95700b867a09547bdc32993/pokeher/cards.py)
+object](https://github.com/gnmerritt/poker/blob/695d0934a46f971176418b4f09d6ac1560f783b2/pokeher/cards.pyx)
 essentially just held an int for value and an int for suit I was able
 to greatly cut down on memory consumption by adding:
 
