@@ -12,7 +12,7 @@ for picking players in a real-time draft came together in time for the
 2013-14 season.
 
 Each fantasy team will write a program to interact with the draft API,
-and chose your team. I'll take the results and punch them into a
+and choose your team. I'll take the results and punch them into a
 "real" fantasy provider, probably ESPN or Yahoo. Sound interesting?
 [Sign up here](http://draft.gnmerritt.net)!
 
