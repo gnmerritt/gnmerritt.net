@@ -7,7 +7,7 @@ title: gnmerritt.net - Nathan's home on the web
 
 {% for post in site.posts limit:12 %}
   {% capture postUid %}{{ post.date | date: "%d%b%Y" }}{% endcapture %}
-  {% if forloop.index > 3 %}
+  {% if forloop.index > 5 %}
     {% assign hidden = true %}
   {% else %}
     {% assign hidden = false %}
