@@ -20,13 +20,19 @@ title: gnmerritt.net - Nathan's home on the web
        <p class="date">{{ post.date | date: "%d %B  %Y"}}</p>
        <br />
 
-       <div class="preview clear">{{ post.content | strip_html | truncatewords: 50 }}</div>
+       <div class="preview clear">
+         {% if forloop.first %}
+           {{ post.content }}
+         {% else %}
+          <span>{{ post.content | strip_html | truncatewords: 50 }}</span>
+         {% endif %}
+       </div>
 
        <div class="clear">
          <p class="hide hidePhone" onclick="gnm.togglePost(this, '{{ postUid }}')">
-	   {% if hidden %}Show Post{% else %}Hide Post{% endif %}
-	 </p>
-         <p class="more"><a href="{{ post.id }}.html">...Read Full Post</a></p>
+           {% if hidden %}Show Post{% else %}Hide Post{% endif %}
+         </p>
+         <p class="more"><a href="{{ post.id }}.html">{% if forloop.first %}Permalink{% else %}...Read full post{% endif %}</a></p>
        </div>
   </article>
 {% endfor %}
