@@ -25,7 +25,7 @@ Convinced? Still reading? Great! Go [sign up here](http://draft.gnmerritt.net/)
 My reference implementation (sans data) from last year
 [is up on GitHub](https://github.com/gnmerritt/fantasy-bot).
 
-Finally, this email wouldn't be complete without a mention of last
+Finally, this post wouldn't be complete without a mention of last
 year's results. I'd like to congratulate Marcus, who strung together
 the only undefeated fantasy football season I've ever seen (including
 routing me in the finals, which stung).
