@@ -10,20 +10,20 @@ Me elsewhere on the web:
  *  My [Facebook](http://facebook.com/gnmerritt), [Twitter](http://twitter.com/gnmerritt) and [LinkedIn](http://www.linkedin.com/profile?viewProfile=&key=25508982&trk=tab_pro)
  *  And some [movies](http://youtube.com/profile?user=satH4n) I'm [partially](http://vimeo.com/4362627) (or completely) [responsible](http://vimeo.com/22967514) for
 
-I'm 23 years old and a recent graduate (2011) of [Bowdoin
+I'm 25 years old and a 2011 graduate of [Bowdoin
 College](http://bowdoin.edu) in Brunswick, Maine. I like brains,
 computers and math. I'm a former [Ultimate](http://stonedclown.com)
 player and I and love to ski & sail.
 
-I currently work on the mobile development team at
-[TripAdvisor](http://tripadvisor.com) in Newton,
-Massachusetts. Although we're a small team, we manage TA's iPhone,
-iPad & Android applications, as well as the the mobile optimized
-version of the website and a set of RESTful APIs. Working full stack
-is a blast, and definitely keeps me on my toes.
+I currently work as a full-stack developer at TripAdvisor. I started
+on the mobile team, and later worked exclusively on our iPad
+application and iPad optimized website. Since then I've touched
+everything from our Instant Booking checkout flows to the database
+that powers our commerce analytics to that footer that spams you with
+pictures of your Facebook friends.
 
 My primary research interest is applying insights from both number
-theory and modern neurscience to machine learning. I was in charge of
+theory and modern neuroscience to machine learning. I was in charge of
 the low-level motion code for the [Northern
 Bites](http://robocup.bowdoin.edu/blog/) Robocup Team (Standard
 Platform League), where I [used particle swarm
