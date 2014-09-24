@@ -33,9 +33,7 @@ robot. Additionally, I worked for Bowdoin's
 [NOC](http://www.bowdoin.edu/it/) and as a TA for Computer Science
 101.
 
-My PGP fingerprint is: <i>CDED 2183 76BB 8D0B EB3A 0B15 6AD5 C192 F259
-6AD4</i> though I assume that if you care about such things you won't be
-satisfied with that information alone...
+My PGP fingerprint is: <i>577A 9EA5 05B2 2CAC B367 69C9 B2E7 22BC 4097 CF82</i>.
 
 And here's my (out of date!) [resume](/gnmerritt-resume.pdf) in case
 you're interested.
