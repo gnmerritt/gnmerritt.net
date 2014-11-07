@@ -8,6 +8,7 @@ Me elsewhere on the web:
  *  I co-founded [214 Software](http://twofourteen.com) with Ben Johnson - we make apps!
  *  Music I listen to: [Last.FM](http://www.last.fm/user/satH4n/) or [Spotify](http://open.spotify.com/user/1239066134)
  *  My [Facebook](http://facebook.com/gnmerritt), [Twitter](http://twitter.com/gnmerritt) and [LinkedIn](http://www.linkedin.com/profile?viewProfile=&key=25508982&trk=tab_pro)
+ *  My [Keybase.io identity](https://keybase.io/gnmerritt)
  *  And some [movies](http://youtube.com/profile?user=satH4n) I'm [partially](http://vimeo.com/4362627) (or completely) [responsible](http://vimeo.com/22967514) for
 
 I'm 25 years old and a 2011 graduate of [Bowdoin
