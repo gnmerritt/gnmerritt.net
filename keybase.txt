@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/gnmerritt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://gnmerritt.net
+  * I am gnmerritt (https://keybase.io/gnmerritt) on keybase.
+  * I have a public key with fingerprint 577A 9EA5 05B2 2CAC B367  69C9 B2E7 22BC 4097 CF82
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "577a9ea505b22cacb36769c9b2e722bc4097cf82",
+            "host": "keybase.io",
+            "key_id": "B2E722BC4097CF82",
+            "uid": "791e62452dffda74d69203fb80a43300",
+            "username": "gnmerritt"
+        },
+        "merkle_root": {
+            "ctime": 1415372275,
+            "hash": "50e3012287535795d9055419a4453f05b97cfe76a0b49e8cfb33ee2ed81aa2d9da971e8e26dc916c5792bedf240bdd3577b8636c34d8714cb0481d4c40298fff",
+            "seqno": 93158
+        },
+        "service": {
+            "hostname": "gnmerritt.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1415372548,
+    "expire_in": 157680000,
+    "prev": "53b23fbbd5889cdb516a55ec2090c8b77537b1c61d57711b74c15a04f469f43c",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFdkm9oVlUcx5/NpTbKGhkz13LcECrG0znnnnPPOU9rxSRtmPSiIl+4Hs6/u+e2
+7d6n+9zNjbGxkkmiUIOiWZBNCC1k6NDAYZENKTBamUMIZVGYJBbZGyNpds5YlJ1X
+59zzud/f7/v9nddvX5arrZq65J14/K3ZV6pO/yxzz26brxn0ZKIHvMKgp7ojE2du
+F4se4xW8LjMgRcXko6QpTrTJv1hpWmKavT6TVqIkthTI0zzyhpod7n4Oo7jTpOU0
+cloeoVRwIwggEiEllPQDGnDFJTIUIakw4FSFDFnJUlLJbqrqLWoWI22/tqEnLN+2
+wfEbNi7yvYsXlEMTIEyQDkMtKNYBR8APJQMC+z4ADqyYdMlSZ9xj0jTKMtew3XZ1
+m2KaJIuuVRY5BmJIfFuLEtuSqJScCWB8ABFilPiEcqI5IARDLjAmfmitOQ+GBgJI
+zA1TofR9Y5DRDAqBNNeCU2iYQYFWHAbKaiBpdIgwkFpbSSpZ4AfKx5pRiJUEmEGN
+bTiIszAMrYeKeSlOvAL3IWFD7pj2Rcq4tl1s/3eXj40bUjlNskQl3faqlGXlgjOd
+DZQdut3IyeKSSlFGsbZT++9YoUVvDoRg1uyZ/nKUmmLkCEIDBuxydUyfi8mXyCYv
+NWGMKy0JDAQhRiHAgWKS2vSohCqA2jqGUFKsIBEAhzjgIfbVvzZ926fotJKVqDMW
+WW9qvKFdVffW5Kpqc8tvqXbvNld7653/POZfv1pxY+u1vos/jPWeOzRxrf7IfcOb
+O453rZ1qaa+uGfzw1bHW8Zq0tvvsCx1n9xz48symS8/nv279+NyOkcbm/rjnC/la
+yylx8IGZfOI3/HV8x8Jt61atXTlZerjw27oDw38s3PFTbvaDI9NvHH46lDsnOqrf
+m76wZf0v+zraCyv27z6xckvHmhsbn+q/vtA4fvJzMDy/Lf5s19yFuk093vft99Qd
+vrL66tj61Q9OPnPockv9zuuli5/O7g1G5hqOsvH50eWt9TPvPFo3dfnPg+/eNTrB
+mkb3vB0ee3J8bu/A6fOb33/51JvtR8/fveybb6/Mb31u5ti+RxpGVn3UtX36k+8a
+fh+8mgdn2u5v3L3mx5mTjz30Nw==
+=Ti+w
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gnmerritt
+
+==================================================================
