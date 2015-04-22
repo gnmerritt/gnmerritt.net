@@ -5,7 +5,7 @@ title: A little about Nathan Merritt
 
 Me elsewhere on the web:
 
- *  I co-founded [214 Software](http://twofourteen.com) with Ben Johnson - we make apps!
+ *  I co-founded [214 Software](http://twofourteen.com) with Ben Johnson - we made iOS/Android apps!
  *  Music I listen to: [Last.FM](http://www.last.fm/user/satH4n/) or [Spotify](http://open.spotify.com/user/1239066134)
  *  My [Facebook](http://facebook.com/gnmerritt), [Twitter](http://twitter.com/gnmerritt) and [LinkedIn](http://www.linkedin.com/profile?viewProfile=&key=25508982&trk=tab_pro)
  *  My [Keybase.io identity](https://keybase.io/gnmerritt)
@@ -16,8 +16,8 @@ College](http://bowdoin.edu) in Brunswick, Maine. I like brains,
 computers and math. I'm a former [Ultimate](http://stonedclown.com)
 player and I and love to ski & sail.
 
-I currently work as a full-stack developer at TripAdvisor. I started
-on the mobile team, and later worked exclusively on our iPad
+In my last gig I worked as a full-stack developer at TripAdvisor. I
+started on the mobile team, and later worked exclusively on our iPad
 application and iPad optimized website. Since then I've touched
 everything from our Instant Booking checkout flows to the database
 that powers our commerce analytics to that footer that spams you with
