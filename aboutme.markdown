@@ -11,17 +11,19 @@ Me elsewhere on the web:
  *  My [Keybase.io identity](https://keybase.io/gnmerritt)
  *  And some [movies](http://youtube.com/profile?user=satH4n) I'm [partially](http://vimeo.com/4362627) (or completely) [responsible](http://vimeo.com/22967514) for
 
-I'm 25 years old and a 2011 graduate of [Bowdoin
+I'm 26 years old and a 2011 graduate of [Bowdoin
 College](http://bowdoin.edu) in Brunswick, Maine. I like brains,
 computers and math. I'm a former [Ultimate](http://stonedclown.com)
 player and I and love to ski & sail.
 
+I currently work as a full-stack software engineer at [Tamr](http://tamr.com).
+
 In my last gig I worked as a full-stack developer at TripAdvisor. I
 started on the mobile team, and later worked exclusively on our iPad
-application and iPad optimized website. Since then I've touched
-everything from our Instant Booking checkout flows to the database
-that powers our commerce analytics to that footer that spams you with
-pictures of your Facebook friends.
+application and iPad optimized website. I ended up working on
+everything from the Instant Booking checkout flows to the database
+that powers commerce BI/analytics to that (now defunct) footer that spams
+you with pictures of your Facebook friends.
 
 My primary research interest is applying insights from both number
 theory and modern neuroscience to machine learning. I was in charge of
