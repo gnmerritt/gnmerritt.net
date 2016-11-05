@@ -11,7 +11,7 @@ Me elsewhere on the web:
  *  My [Keybase.io identity](https://keybase.io/gnmerritt)
  *  And some [movies](http://youtube.com/profile?user=satH4n) I'm [partially](http://vimeo.com/4362627) (or completely) [responsible](http://vimeo.com/22967514) for
 
-I'm 26 years old and a 2011 graduate of [Bowdoin
+I'm 27 years old and a 2011 graduate of [Bowdoin
 College](http://bowdoin.edu) in Brunswick, Maine. I like brains,
 computers and math. I'm a former [Ultimate](http://stonedclown.com)
 player and I and love to ski & sail.
