@@ -7,6 +7,7 @@ I hereby claim:
   * I am an admin of https://gnmerritt.net
   * I am gnmerritt (https://keybase.io/gnmerritt) on keybase.
   * I have a public key ASC7CazVJx-y9EwnwtD2AZ1WPTVvkFLCmrOcy-PRgUQ3owo
+  * I have a public key with fingerprint 577A 9EA5 05B2 2CAC B367  69C9 B2E7 22BC 4097 CF82
 
 To do so, I am signing this object:
 
