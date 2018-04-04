@@ -6,6 +6,9 @@ layout: default
     <h1>Filed Under <small>#{{ page.category }}</small></h1>
 
     {% for post in site.categories[page.category] %}
+      <h3> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
+      <p class="date">{{ post.date | date: "%d %B  %Y"}}</p>
+      <br />
       <div class="preview clear">
         {{ post.excerpt }}
       </div>
