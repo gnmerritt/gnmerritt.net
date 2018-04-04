@@ -8,9 +8,9 @@ Over the next couple weeks I'm going to work on tools to help transition all my 
 
 First task up was to use Facebook's tool ("Download a copy" link at the bottom of the [settings page](https://www.facebook.com/settings)) to download an archive of "all my data". This gives you an archive full of HTML files, images and video clips with an `index.html` you can open in a browser.
 
-![archive layout]({{ "/assets/fb-data-layout.png" | absolute_url }}){ height=200px }
+<img alt="archive layout" src="assets/fb-data-layout.png" height="200px" />
 
-![archive index]({{ "/assets/fb-data-index.png" | absolute_url }}){ height=300px }
+<img alt="archive index" src="assets/fb-data-index.png" height="300px" />
 
 I noticed that my data archive was only 60 megs - seemed a little bit light for 12 years of usage data. The first thing I noticed was missing was any photo I was tagged in but that I didn't upload myself. I assumed that these would come along for the ride by default, but apparently not.
 
@@ -32,7 +32,7 @@ Copy and paste the output and stick it into a text file. There'll probably be a 
 
 OK phew, we're almost there. Text file should look something like this:
 
-![fb photo links]({{ "/assets/fb-text.png" | absolute_url }}){ height=100px }
+<img src="assets/fb-text.png alt="fb photo links"" height="100px" />
 
 Now one more shell command to download all the pictures you pulled out of the search results page. Make sure to use the path to your text file in the first part of the command.
 
