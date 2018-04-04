@@ -32,7 +32,7 @@ Copy and paste the output and stick it into a text file. There'll probably be a 
 
 OK phew, we're almost there. Text file should look something like this:
 
-<img alt="fb photo links" src="{{ "assets/fb-text.png" | absolute_url }}" height="100px" />
+<img alt="fb photo links" src="{{ "/assets/fb-text.png" | absolute_url }}" height="100px" />
 
 Now one more shell command to download all the pictures you pulled out of the search results page. Make sure to use the path to your text file in the first part of the command.
 
