@@ -2,7 +2,6 @@ highlighter: 'pygments'
 
 destination: /usr/share/nginx/www
 
-
 collections:
   category:
     output: true

@@ -2,18 +2,19 @@
 layout: default
 ---
 
-<div class="tags">
-    {% assign sortedCategories = page.categories | sort %}
-    {% for category in sortedCategories %}
-        <span class="tag">
-            <a href="/category/{{ category }}">#{{ category }}</a>
-        </span>
-    {% endfor %}
-</div>
-
 <article class="post full">
   <h3 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
   <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+
+  <div class="tags clear">
+      {% assign sortedCategories = page.categories | sort %}
+      Filed under:
+      {% for category in sortedCategories %}
+          <span class="tag">
+              <a href="/category/{{ category }}">#{{ category }}</a>
+          </span>
+      {% endfor %}
+  </div>
 
   <div class="body clear">
     {{ content }}
