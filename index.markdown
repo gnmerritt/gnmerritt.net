@@ -16,7 +16,7 @@ title: gnmerritt.net - Nathan's home on the web
   <article
     class="post{% if hidden %} closed{% endif %}"
     id="{{ postUid }}">
-       <h3> <a href="{{ post.id }}.html">{{ post.title }}</a></h3>
+       <h3> <a href="{{ post.id }}">{{ post.title }}</a></h3>
        <p class="date">{{ post.date | date: "%d %B  %Y"}}</p>
        <br />
 
@@ -32,7 +32,7 @@ title: gnmerritt.net - Nathan's home on the web
          <p class="hide hidePhone" onclick="gnm.togglePost(this, '{{ postUid }}')">
            {% if hidden %}Show Post{% else %}Hide Post{% endif %}
          </p>
-         <p class="more"><a href="{{ post.id }}.html">{% if forloop.first %}Permalink{% else %}...Read full post{% endif %}</a></p>
+         <p class="more"><a href="{{ post.id }}">{% if forloop.first %}Permalink{% else %}...Read full post{% endif %}</a></p>
        </div>
   </article>
 {% endfor %}
