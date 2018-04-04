@@ -3,10 +3,10 @@ layout: post
 title: Moving to Diaspora*
 ---
 
-I'm going to be moving my social networking over to Diaspora over the next few weeks. I encourage you all to join me.
+I'm going to be moving my social networking over to [Diaspora*](https://diasporafoundation.org/) over the next few weeks. I encourage you all to join me.
 
-Why Diaspora? It's open source, free and federated. What 'federated' means that there are lots of independent servers running the code, not just one. Think email. You wouldn't hesitate to send an email from your gmail to someone using a hotmail, yahoo or aolol address. If your email provider started doing something crappy you could switch without having to rebuild your entire address book.
+Why Diaspora*? It's open source, free and federated. What 'federated' means that there are lots of independent servers running the code, not just one. Think email. You wouldn't hesitate to send an email from your gmail to someone using a hotmail, yahoo or aolol address. If your email provider started doing something crappy you could switch without having to rebuild your entire address book.
 
-In addition, Diaspora centers on strong privacy controls - they call them 'aspects' - which let you finely tune how your data is shared with other users and apps. I believe that we should own our personal data and interactions rather than gifting them to a corporation for advertising.
+In addition, Diaspora* centers on strong privacy controls - they call them 'aspects' - which let you finely tune how your data is shared with other users and apps. I believe that we should own our personal data and interactions rather than gifting them to a corporation for advertising.
 
 My username is [gnmerritt@diasp.org](https://diasp.org/people/da77ca90723a4ef3) - I hope to see you there
