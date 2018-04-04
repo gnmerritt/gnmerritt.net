@@ -8,15 +8,15 @@ Over the next couple weeks I'm going to work on tools to help transition all my 
 
 First task up was to use Facebook's tool ("Download a copy" link at the bottom of the [settings page](https://www.facebook.com/settings)) to download an archive of "all my data". This gives you an archive full of HTML files, images and video clips with an `index.html` you can open in a browser.
 
-<img alt="archive layout" src="assets/fb-data-layout.png" height="200px" />
+<img alt="archive layout" src="{{ "/assets/fb-data-layout.png" | absolute_url }}" height="200px" />
 
-<img alt="archive index" src="assets/fb-data-index.png" height="300px" />
+<img alt="archive index" src="{{ "/assets/fb-data-index.png" | absolute_url }}" height="300px" />
 
 I noticed that my data archive was only 60 megs - seemed a little bit light for 12 years of usage data. The first thing I noticed was missing was any photo I was tagged in but that I didn't upload myself. I assumed that these would come along for the ride by default, but apparently not.
 
 It turns out that it's impossible to fetch this list of photos via the Graph API (and consequently, from a third party app), since the access token you can create as an individual user is not authorized to view your friend's data (including their photos, which they've tagged you in). Yay privacy! If this had been the case years ago (or _always_) then Cambridge Analytica couldn't have gotten 50 million profiles from 270k users.
 
-## HOWTO: Downloading all photos you're tagged in, you rebel you
+## HOWTO: Download all photos you're tagged in, you rebel you
 
 First off you need your facebook id. I used [this tool](https://zerohacks.com/find-facebook-id/) which didn't ask for any permissions so is probably fine?
 
@@ -32,7 +32,7 @@ Copy and paste the output and stick it into a text file. There'll probably be a 
 
 OK phew, we're almost there. Text file should look something like this:
 
-<img src="assets/fb-text.png alt="fb photo links"" height="100px" />
+<img src={{ "assets/fb-text.png" | absolute_url }} alt="fb photo links"" height="100px" />
 
 Now one more shell command to download all the pictures you pulled out of the search results page. Make sure to use the path to your text file in the first part of the command.
 
