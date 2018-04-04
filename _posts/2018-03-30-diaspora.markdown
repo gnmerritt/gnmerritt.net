@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Moving to Diaspora*
-categories: deletefacebook
+categories:
+   - "deletefacebook"
 ---
 
 I'm going to be moving my social networking over to [Diaspora*](https://diasporafoundation.org/) over the next few weeks. I encourage you all to join me.

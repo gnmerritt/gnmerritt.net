@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Downloading Photos of You from Facebook
-categories: deletefacebook
+categories:
+   - "deletefacebook"
 ---
 
 Over the next couple weeks I'm going to work on tools to help transition all my data from Facebook to [Diaspora*](https://diasporafoundation.org/). Part of that is making sure that all the data I want to keep from my Facebook days is safely stored somewhere locally.
