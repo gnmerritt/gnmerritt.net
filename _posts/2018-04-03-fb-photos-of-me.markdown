@@ -16,7 +16,7 @@ I noticed that my data archive was only 60 megs - seemed a little bit light for 
 
 It turns out that it's impossible to fetch this list of photos via the Graph API (and consequently, from a third party app), since the access token you can create as an individual user is not authorized to view your friend's data (including their photos, which they've tagged you in). Yay privacy! If this had been the case years ago (or _always_) then Cambridge Analytica couldn't have gotten 50 million profiles from 270k users.
 
-### HOWTO: Downloading all photos you're tagged in, you rebel you
+## HOWTO: Downloading all photos you're tagged in, you rebel you
 
 First off you need your facebook id. I used [this tool](https://zerohacks.com/find-facebook-id/) which didn't ask for any permissions so is probably fine?
 
