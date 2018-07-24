@@ -8,7 +8,6 @@ Me elsewhere on the web:
  *  My [GitHub](https://github.com/gnmerritt) is full of frivolous side projects. Most involve uncertainty.
  *  I co-founded [214 Software (domain lapsed)](http://twofourteen.com) with Ben Johnson - we made iOS/Android apps!
  *  My [Keybase.io identity](https://keybase.io/gnmerritt), from which you can find my other profiles
- *  Music I listen to: [Last.FM](https://www.last.fm/user/satH4n/) or [Spotify](https://open.spotify.com/user/1239066134)
  *  And some videos I helped [make](http://vimeo.com/4362627) in [college](http://vimeo.com/22967514)
 
 I'm a 2011 graduate of [Bowdoin College](https://bowdoin.edu) in Brunswick, Maine.
