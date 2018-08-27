@@ -3,7 +3,8 @@ layout: hiring
 title: Hire Nathan Merritt
 ---
 
-# Contracting Engagements with Nathan Merritt
+<h1 class="text-center">Contracting Engagements with Nathan Merritt</h1>
+<br>
 
 I'm an experienced full-stack software engineer - I've shipped everything from
 mobile apps to enterprise data science tools. I'm currently available to hire
@@ -33,7 +34,7 @@ free to reach out directly with questions.
 
 <br>
 
-### Sound like we might be a good fit?
+<h3 class="text-center">Sound like we might be a good fit?</h3>
 
 I'm looking forward to hearing from you! Please fill out the form below and I'll
 get back to you with more information and my availability in 1-2 business days.
