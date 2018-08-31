@@ -50,7 +50,41 @@ get back to you with more information and my availability in 1-2 business days.
   </div>
 
   <div class="form-group">
-    <label for="description">Project description</label>
+    <p>What type of project is this?</p>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="frontend">
+      <label class="form-check-label" for="inlineCheckbox1">Frontend</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="backend">
+      <label class="form-check-label" for="inlineCheckbox2">Backend</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="devops">
+      <label class="form-check-label" for="inlineCheckbox3">DevOps</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" name="data">
+      <label class="form-check-label" for="inlineCheckbox4">Data Science or ETL</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox5" name="ui_abt">
+      <label class="form-check-label" for="inlineCheckbox5">UX/UI optimization</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox6" name="tools">
+      <label class="form-check-label" for="inlineCheckbox6">Development tooling</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox7" name="consulting">
+      <label class="form-check-label" for="inlineCheckbox7">Planning or Consulting</label>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="form-group">
+    <label for="description">Anything else I should know?</label>
     <textarea rows="4" cols="80" class="desc form-control" name="description" required placeholder="Please describe your project in 1-2 sentences"></textarea>
   </div>
 
