@@ -8,13 +8,11 @@ nav.left { margin-left:2%; width:20%; float:left; }
 .topList { list-style:none; padding-left:5px; width:100%; }
 .section { margin:5px 0; text-decoration:underline; }
 
-.grid:after { content:""; display:table; clear:both; }
-.grid .col { float:left; margin-left:2%; }
-.grid .main { width: 65%; }
-.grid .sidebar { width:30%; }
+a { color: #0000EE; }
 
 #content { border-top:30px; border-bottom:30px; }
-#content h4 { text-align: right; }
+
+.sidebar { padding: 10px 20px; }
 
 .clear { clear:both; }
 
