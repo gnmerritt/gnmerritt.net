@@ -2,3 +2,7 @@ highlighter: 'pygments'
 
 destination: /usr/share/nginx/www
 permalink: pretty
+url: "https://gnmerritt.net"
+
+plugins:
+  - jekyll-sitemap
