@@ -1,6 +1,6 @@
 highlighter: 'pygments'
 
-destination: /usr/share/nginx/www
+destination: build/
 permalink: pretty
 url: "https://gnmerritt.net"
 
