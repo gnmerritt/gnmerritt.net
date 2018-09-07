@@ -7,9 +7,9 @@ category: [ cli ]
 I spend a lot of time on the command-line, and every so often I run across a new
 way to make it show me more useful information. Today's update: displaying the
 real time the last command took to run inline in the prompt. I can't take credit
-for the idea - I found the approach on this [excellent blog post]() - but I've
-got a few other interesting pieces in my `$PS1` so I figure it's worth sharing
-briefly. Here's what my shell environment looks like:
+for the idea - I found the approach on this [excellent blog post](https://jakemccrary.com/blog/2015/05/03/put-the-last-commands-run-time-in-your-bash-prompt/)
+- but I've got a few other interesting pieces in my `$PS1` so I figure it's
+worth sharing briefly. Here's what my shell environment looks like:
 
 <img alt="archive layout" src="{{ "/assets/ps1.png" | absolute_url }}" width="500px" />
 
