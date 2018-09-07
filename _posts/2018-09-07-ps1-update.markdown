@@ -1,0 +1,136 @@
+---
+title: My Bash $PS1
+layout: post
+category: [ cli ]
+---
+
+I spend a lot of time on the command-line, and every so often I run across a new
+way to make it show me more useful information. Today's update: displaying the
+real time the last command took to run inline in the prompt. I can't take credit
+for the idea - I found the approach on this [excellent blog post]() - but I've
+got a few other interesting pieces in my `$PS1` so I figure it's worth sharing
+briefly. Here's what my shell environment looks like:
+
+<img alt="archive layout" src="{{ "/assets/ps1.png" | absolute_url }}" width="500px" />
+
+All of these functions use shell variables to pass info along to the `$PS1`.
+I've found that this approach along with `$PROMPT_COMMAND` leads to the fewest
+levels of shell quoting & interpolation hell. The only thing to remember is that
+in your `$PS1` you need to escape the `$` so that it's interpolated when the
+prompt prints rather than when the `$PS1` is set. Wrong: `PS1=${my_dynamic_var}`,
+Right: `PS1=\${my_dynamic_var}`.
+
+## current git branch
+
+This one is pretty standard, ask `git` for your current branch. If it's non-empty
+wrap and color it for easy visual grepping.
+
+{% highlight bash %}
+function vc_branch() {
+    vc_branch=`git rev-parse --abbrev-ref HEAD 2>/dev/null`
+    if [ "$vc_branch" != "" ]; then
+        vc_branch="${LPURPLE}[${vc_branch}]${RESTORE} "
+    fi
+}
+{% endhighlight %}
+
+## last command's exit status
+
+I've had this in my `$PS1` for years now - who doesn't love a smiley face to let
+you know that your last command didn't explode?
+
+{% highlight bash %}
+# sets $cmd_face with a colored emoticon representing the exit status of the last command
+function smile() {
+    if [ $? -eq 0 ]; then
+        cmd_face="${GREEN}:-)${RESTORE}"
+    else
+        cmd_face="${RED}8-(${RESTORE}"
+    fi
+}
+{% endhighlight %}
+
+## last command's time elapsed
+
+This is a little bit more involved - the basic idea here is that we start a timer
+before running every command with `trap` and stop it when the prompt refreshes,
+as the last thing to run in `$PROMPT_COMMAND`. I've updated Jake's example code
+to format the timing a little bit more densely - `1m31s` instead of `91s` and
+`1hr31m0s` instead of `91m0s`.
+
+{% highlight bash %}
+# adapted from https://jakemccrary.com/blog/2015/05/03/put-the-last-commands-run-time-in-your-bash-prompt/
+function timer_start() {
+    timer=${timer:-$SECONDS}
+}
+
+# sets $timer_show with the runtime of the last command
+# empty if the command ran in < 1s
+# units switch at 1m31s and 1hr31m0s
+function timer_stop() {
+    secs=$(($SECONDS - $timer))
+    unset timer
+
+    if [ $secs -lt 1 ]; then
+        timer_show=" "
+        return 0
+    fi
+
+    hours=$(($secs / 3600))
+    mins=$(($secs / 60))
+
+    if [ $secs -gt 90 ]; then
+        secs=$(($secs % 60))
+
+        if [ $mins -gt 90 ]; then
+            mins=$(($mins % 60))
+            timer_show="${hours}hr${mins}m${secs}s"
+        else
+            timer_show="${mins}m${secs}s"
+        fi
+    else
+        timer_show="${secs}s"
+    fi
+    timer_show=" $timer_show "
+}
+
+trap 'timer_start' DEBUG
+{% endhighlight %}
+
+## plumbing
+
+And finally it's time to hook the functions up to `$PROMPT_COMMAND` so that they
+refresh as you navigate around in your terminal
+
+{% highlight bash %}
+# order matters here: smile needs to be first to check the last command and timer_stop
+# needs to be last in order to time the next command rather than the prompt commands
+if [ "$PROMPT_COMMAND" == "" ]; then
+    PROMPT_COMMAND="smile; vc_branch; timer_stop"
+else
+    PROMPT_COMMAND="smile; vc_branch; $PROMPT_COMMAND; timer_stop"
+fi
+{% endhighlight %}
+
+and to set your `$PS1` variable so that the whole show works. One last note:
+I'm a huge fan of a two-line terminal prompt so that it's easy to see which
+directory you're in and still have plenty of space to type out long commands
+without hitting line wrapping. Here's the `$PS1` I use on pretty much every
+machine I log into:
+
+{% highlight bash %}
+if [ "$PS1" ]; then
+    # bash 3.0 and line-wrapping compatible version:
+    # gives the following (where smiley indicates last cmd successfully ran)
+    # powered by the functions above and $PROMPT_COMMAND
+    #
+    # [HH:MM AM/PM] user@host: [current branch (if any)] $PWD
+    # :-) / 8-( {last command runtime (s)} $
+
+    PS1="${BOLD}[\@]${RESTORE} ${YELLOW}\u${RESTORE}@${GREEN}\h \${vc_branch}${BLUE}\w/${RESTORE} \n \${cmd_face}\${timer_show}\$ "
+fi
+{% endhighlight %}
+
+Finally, for easy copy-pasta, here's a [gist](https://gist.github.com/gnmerritt/c3a996d7767d6be457f2df0d952be97b) with
+all of this code in one place. Stick it in your `~/.bash_profile` and never worry
+about running `time` by hand again!
