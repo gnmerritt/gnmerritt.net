@@ -7,7 +7,6 @@
   <link rel="stylesheet" type="text/css" media="screen, print" href="/css/blog.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <link rel="me" href="https://mastodon.social/@gnmerritt" />
 </head>
 <body>
 
@@ -18,14 +17,14 @@
 
 <!-- Thanks for visiting! -->
 
-<div class="container-fluid">
+<div class="container-fluid m-3">
 <div class="row">
 
 <nav class="col-sm-4 sidebar">
  <h3>Nathan's Stuff:</h3>
 
   <ul class="topList">
-   <li><a href="/index">News</a></li>
+   <li><a href="/index">Ramblings</a></li>
    <li><a href="/aboutme">About me</a></li>
    <li><a href="/hire">Hire me</a></li>
   </ul>
@@ -54,14 +53,14 @@
        <li>Two Fourteen Software (domain lapsed)</li>
        <li><a href="http://freetimeapp.com">Free Time</a></li>
        <li><a href="/cs280/">multiTRACE machine vision</a></li>
-       <li><a href="http://robocup.bowdoin.edu/blog/">Northern Bites Robocup</a></li>
+       <li><a href="https://research.bowdoin.edu/robocup/">Northern Bites Robocup</a></li>
      </ul>
    </li>
   </ul>
 
   <h3>Posts:</h3>
   <ul class="topList">
-  {% for post in site.posts limit:12 %}
+  {% for post in site.posts %}
     <li>
       <a href="{{ post.id }}">{{ post.title }}</a>
     </li>
@@ -69,7 +68,7 @@
   </ul>
 </nav>
 
-<div id="content" class="col-sm-8 main">
+<div id="content" class="col-sm-8 main pr-3">
 
 {{ content }}
 
@@ -86,7 +85,6 @@
   src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
   crossorigin="anonymous"></script>
-<script type="text/javascript" src="/js/blog.js"></script>
 
 <!-- Matomo -->
 <script type="text/javascript">
@@ -102,6 +100,9 @@
   })();
 </script>
 <!-- End Matomo Code -->
+
+<!-- Mastadon verification -->
+<a rel="me" href="https://mastodon.social/@gnmerritt"></a>
 
 </body>
 </html>

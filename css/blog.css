@@ -20,10 +20,7 @@ a { color: #0000EE; }
 .post.full { border-style:none; }
 .post h3 { float:left; } /* title */
 .post .date { float:right; } /* date */
-.post.closed .preview { display:none; }
-.post .more, .post .hide { margin:0.5em; padding:0.25em; cursor:pointer; }
-.post .more { float:right; }
-.post .hide { border:1px dashed black; float:left; }
+.post .more { text-align: center; margin:0.5em; padding:0.25em; cursor:pointer; }
 
 .showPhone { display:none; }
 

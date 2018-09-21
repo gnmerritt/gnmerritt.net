@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post full">
+<article class="post full p-4">
   <h3 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
   <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
 
@@ -15,6 +15,7 @@ layout: default
           </span>
       {% endfor %}
   </div>
+  <hr/>
 
   <div class="body">
     {{ content }}
