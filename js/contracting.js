@@ -21,6 +21,17 @@ function submitForm(e) {
     });
 }
 
+function clickSkill(e) {
+  var button = e.target;
+  $(".skillbox button.category").removeClass("active");
+  $(button).addClass("active");
+  var content = $(button).siblings(".skills").html();
+  $(".skill-spot").html(content);
+}
+
 $(document).ready(function() {
   $('#inquiryForm').submit(submitForm);
+  $("button.category").click(clickSkill);
+  // active backend web skills
+  $("button.category.active").click();
 });
