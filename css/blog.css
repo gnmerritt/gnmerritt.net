@@ -32,7 +32,7 @@ a { color: #0000EE; }
 .showPhone { display:none; }
 
 /* smartphone specific layout */
-@media screen and (max-width: 500px)
+@media screen and (max-width: 600px)
 {
   .hidePhone, .twitter-timeline { display:none; }
   .showPhone { display:block; }
