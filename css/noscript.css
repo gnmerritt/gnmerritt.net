@@ -1,0 +1,16 @@
+.hideNoscript {
+  display: none;
+}
+.greyNoscript {
+  opacity: 50%;
+}
+.lineNoscript {
+  text-decoration: line-through;
+}
+
+.skillbox .skills {
+  display: block;
+}
+.skill-spot {
+  display: none;
+}

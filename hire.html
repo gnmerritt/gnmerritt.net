@@ -101,11 +101,20 @@ to reach out <a href="#interest">directly</a> with questions.
 
 <a name="interest"></a>
 
-<p>
+<p class="lineNoscript">
 I'm looking forward to hearing from you! Please fill out the form below and I'll
 get back to you with more information and my availability in the next business
 day.
 </p>
+
+<noscript>
+<p>
+I'm looking forward to hearing from you! Since you have Javascript disabled my
+usual form won't work. I agree with your freedom to browse the web however you
+choose - please send me an email ('nathan' at this domain) and I'll get back to
+you with more information and my availability in the next business day.
+</p>
+</noscript>
 
 <hr/>
 
@@ -159,9 +168,9 @@ day.
   <div class="form-group">
     <label for="">When would you like work to start?</label>
     <select name="start_date" class="form-control" required>
-      <option disabled value="0">As soon as possible</option>
-      <option disabled value="14">Within the next two weeks</option>
-      <option disabled value="30">Within the next month</option>
+      <option value="0">As soon as possible</option>
+      <option value="14">Within the next two weeks</option>
+      <option value="30">Within the next month</option>
       <option value="60" selected="selected">Any time in the next several months</option>
       <option value="unsure">No established timeline yet</option>
     </select>
@@ -173,7 +182,8 @@ day.
 
   <br/>
   <div class="text-right">
-    <button type="submit" class="btn btn-primary" id="submit">Send to Nathan</button>
+    <button type="submit" class="btn btn-primary hideNoscript" id="submit">Send to Nathan</button>
+    <noscript>No javascript, no problem. Send me an email!</noscript>
   </div>
 
   <div class="progress d-none">
