@@ -1,0 +1,57 @@
+---
+layout: wedding
+title: Share your address with Katherine and Nathan
+---
+
+<div class="p-4">
+<h1 class="text-center">Please share your address with Katherine and Nathan</h1>
+
+<hr/>
+
+<noscript>
+<p>Please turn on javascript for this form. Nathan wrote it, there's nothing evil here.</p>
+</noscript>
+
+<form id="addressForm">
+  <div>Who's there?</div>
+  <div class="form-group form-inline">
+    <input name="name" class="form-control" type="text" placeholder="Your name" required />
+    <span>&nbsp;and&nbsp;</span>
+    <input name="email" class="form-control" type="email" placeholder="email address" />
+  </div>
+
+  <div class="form-group form-inline">
+    <input name="partner" class="form-control" type="text" placeholder="Your partner's name" />
+  </div>
+
+  <div>And where do you live?</div>
+
+  <div class="form-group form-inline">
+    <input name="street_1" class="form-control" type="text" placeholder="51 Market St" required/>
+    <input name="street_2" class="form-control" type="text" placeholder="Apt 1" required/>
+  </div>
+  <div class="form-group form-inline">
+    <input name="city" class="form-control" type="text" placeholder="Cambridge" required/>
+    <input name="state" class="form-control" type="text" placeholder="MA" required/>
+    <input name="zip" class="form-control" type="number" placeholder="02139" required/>
+  </div>
+
+  <div>Thank you!</div>
+
+  <div>
+    <span id="message" />
+  </div>
+
+  <br/>
+  <div class="text-left">
+    <button type="submit" class="btn btn-primary" id="submit">Share with us</button>
+  </div>
+
+  <div class="progress d-none">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+  </div>
+</form>
+
+</div>
+
+<script type="text/javascript" src="/js/addresses.js"></script>
