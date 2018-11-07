@@ -12,7 +12,7 @@ title: Share your address with Katherine and Nathan
 <p>Please turn on javascript for this form. Nathan wrote it, there's nothing evil here.</p>
 </noscript>
 
-<form id="addressForm">
+<form id="addressForm" autocomplete="on">
   <div>Who's there?</div>
   <div class="form-group form-inline">
     <input name="name" class="form-control" type="text" placeholder="Your name" required />
@@ -28,12 +28,13 @@ title: Share your address with Katherine and Nathan
 
   <div class="form-group form-inline">
     <input name="street_1" class="form-control" type="text" placeholder="51 Market St" required/>
-    <input name="street_2" class="form-control" type="text" placeholder="Apt 1" required/>
+    <input name="street_2" class="form-control" type="text" placeholder="Apt 1" />
   </div>
   <div class="form-group form-inline">
     <input name="city" class="form-control" type="text" placeholder="Cambridge" required/>
     <input name="state" class="form-control" type="text" placeholder="MA" required/>
-    <input name="zip" class="form-control" type="text" placeholder="02139" required/>
+    <span>,</span>
+    <input name="zip" class="form-control" type="text" placeholder="02139" pattern="[0-9]{5}" required/>
   </div>
 
   <div>Thank you!</div>
