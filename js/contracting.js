@@ -9,7 +9,7 @@ function submitForm(e) {
   $.post(URL + "?" + $('#inquiryForm').serialize())
     .done(function() {
       $("#message")
-        .text("Thank you! Your inquiry submitted successfully, Nathan will be in touch in the next 1-2 business days");
+        .text("Thank you! Your inquiry was submitted successfully, Nathan will be in touch in the next 1-2 business days");
       $("#submit").remove();
     })
     .fail(function() {
