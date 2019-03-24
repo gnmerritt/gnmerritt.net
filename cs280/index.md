@@ -24,21 +24,3 @@ to perform abstract, cognitively inspired object recognition. </p>
 <li><a href="cognitive_vision.pdf">Project proposal paper</a></li>
 <li><a href="projects_initial_presentation.pdf">Slides from my 5 minute introductory presentation</a></li>
 <li><a href="projects_progress.pdf">Current presentation (in progress)</a>
-
-</ul>
-
-<!--
-<h3>Weekly work logs</h3>
-
-<ul>
-  <li><a href="logs/jan24.shtml">First two weeks of class (Jan 24-2/3)</a></li>
-  <li><a href="logs/feb3.shtml">Week of February 3-10</a></li>
-  <li><a href="logs/feb10.shtml">Week of Feb 10-17th</a></li>
-  <li><a href="logs/feb17.shtml">Week of Feb 17-24th</a></li>
-  <li><a href="logs/feb24.shtml">Week of Feb 24th - March 3rd</a></li>
-  <li><a href="">Work log for most of March</a></li>
-</ul>
--->
-
-</div> <!-- end content -->
-
