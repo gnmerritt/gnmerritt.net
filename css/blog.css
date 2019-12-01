@@ -12,6 +12,8 @@ a { color: #0000EE; }
 
 #content { border-top:30px; border-bottom:30px; }
 
+.container-fluid { width: auto; }
+
 .sidebar { padding: 10px 20px; }
 
 .clear { clear:both; }
