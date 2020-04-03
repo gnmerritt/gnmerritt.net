@@ -5,9 +5,23 @@ function submitForm(e) {
   $(".progress").removeClass("d-none");
   $("#submit").addClass("d-none");
 
-  var URL = 'https://script.google.com/macros/s/AKfycbxg9SExUf1PGzbor99Vko-tg2ycvf8x5iZ7pTOQ3SUmnnNkroY/exec';
-  $.post(URL + "?" + $('#inquiryForm').serialize())
-    .done(function() {
+  var data = {
+    techs: [],
+  };
+  $('#inquiryForm').serializeArray().forEach(e => {
+    if (e.value === 'on') {
+      data.techs.push(e.name);
+    } else if (e.name === 'start_date') {
+      data[e.name] = parseInt(e.value, 10);
+    } else {
+      data[e.name] = e.value;
+    }
+  });
+  $.ajax("https://api.gnmerritt.net/inquiries", {
+    data : JSON.stringify(data),
+    contentType : 'application/json',
+    type : 'POST'
+  }).done(function() {
       $("#message")
         .text("Thank you! Your inquiry was submitted successfully, Nathan will be in touch in the next 1-2 business days");
       $("#submit").remove();
