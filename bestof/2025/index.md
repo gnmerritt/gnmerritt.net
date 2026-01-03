@@ -4,7 +4,7 @@ layout: bestof
 
 <h1>Hi there!</h1>
 
-<p>We'd love to hear about some of your 2025 favorites! Or you can see what other folks have sent in so far <a href="#">on the results page</a></p>
+<p>We'd love to hear about some of your 2025 favorites! Or you can see what other folks have sent in so far <a href="results/">on the results page</a></p>
 
 <form id="faves-form">
   <label for="album">album</label>
@@ -51,3 +51,4 @@ layout: bestof
 </form>
 
 <h3 id="message"></h3>
+<p id="results-link" class="d-none"><a href="results/">See what other folks said here</a></p>

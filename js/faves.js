@@ -1,3 +1,5 @@
+const FAVES="https://api.gnmerritt.net/faves";
+
 function submitForm(e) {
   e.preventDefault();
   e.stopPropagation();
@@ -58,12 +60,13 @@ function submitForm(e) {
     cleanup();
     return;
   }
-  $.ajax("https://api.gnmerritt.net/faves", {
+  $.ajax(FAVES, {
     data : JSON.stringify(favesList),
     contentType : 'application/json',
     type : 'POST'
   }).done(function() {
       $("#message").text("Got it, thank you!");      
+      $("#results-link").removeClass("d-none");
       $("#submit").remove();
     })
     .fail(function() {
@@ -72,6 +75,37 @@ function submitForm(e) {
     .always(cleanup);
 }
 
+function loadResults() {
+  const results = $('#results');
+  if (!results.length) {
+    return;
+  }
+  $.ajax(FAVES).done((res) => {
+    processResults(res, results);
+    $('.progress').addClass("d-none");
+    results.removeClass("d-none");
+  });
+}
+
+function processResults(picks, dest) {
+ const categories = {};
+ for (p of picks) {
+  const cat = p.category;
+  const answers = categories[cat] ?? [];
+  answers.push({who: p.name, pick: p.pick});
+  categories[cat] = answers;
+ }
+ Object.entries(categories).forEach(([c, picks]) => {
+    dest.append(`<h3>${c}</h3>`);
+    const list = $('<ul></ul>');
+    for (p of picks) {
+      list.append(`<li>${p.pick} (${p.who ?? 'anon'})</li>`);
+    }
+    dest.append(list);
+  }) 
+}
+
 $(document).ready(function() {
   $('#faves-form').submit(submitForm);
+  loadResults();
 });
