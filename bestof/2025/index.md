@@ -20,10 +20,10 @@ layout: bestof
   <br/>    
   <hr />
     
-  <p>or write-in your own category</p>
+  <p>or write-in your own favorite</p>
   <label for="write-in-cat">category</label>
   <input name="write-in-cat" type="text" />
-  <label for="write-in-fav">favorite pick</label>
+  <label for="write-in-fav">best-of pick</label>
   <input name="write-in-fav" type="text" />
   <br/>
 
