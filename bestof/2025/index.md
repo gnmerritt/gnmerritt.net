@@ -15,6 +15,10 @@ layout: bestof
   <input name="food" type="text" />
   <br/>
 
+  <label for="hooper">hooper</label>
+    <input name="hooper" type="text" />
+  <br/>
+
   <label for="adventure">adventure</label>
   <input name="adventure" type="text" />
   <br/>    
